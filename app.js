@@ -6,8 +6,11 @@ require('dotenv/config');
 
 //import Routes
 const postRoute = require('./routes/posts');
+const userRoute = require('./routes/user');
 
-app.use('/posts', postRoute);
+//Routes
+app.use('/post', postRoute);
+app.use('/user', userRoute);
 
 //Routes
 app.get('/', (req, res) => {
