@@ -5,8 +5,13 @@ const router = express.Router();
 //import PostSchema
 const Post = require("../models/Post");
 
-router.get("/", (req, res) => {
-  res.send("Post test!!!");
+router.get("/", async (req, res) => {
+  try{
+        const posts = await Post.find();
+        res.json(posts);
+  }catch{
+      res.json({message: err});
+  }
 });
 
 router.get("/specyfic", (req, res) => {
