@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const moongose = require('mongoose');
+const mongoose = require('mongoose');
 //dotenv
 require('dotenv/config');
 
@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 
 //Connect to DB
-moongose.connect(
+mongoose.connect(
     process.env.DB_CONNECTION,
     { useNewUrlParser: true },
     () => {

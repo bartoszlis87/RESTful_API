@@ -12,4 +12,4 @@ Steps:
 6. Connect do DB
 7. DB_CONNECTION dotenv/config
 8. Add Router and routes, import Routes to app.js
-9. 
+9. mongoose.Schema
