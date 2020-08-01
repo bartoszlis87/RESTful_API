@@ -13,3 +13,4 @@ Steps:
 7. DB_CONNECTION dotenv/config
 8. Add Router and routes, import Routes to app.js
 9. mongoose.Schema
+10. npm install body-parser
