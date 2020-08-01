@@ -7,3 +7,6 @@ Steps:
 2. install dependencies
 - npm install npm install express nodemon
 3. Change package.json "start": "nodemon app.js"
+4. npm install mongoose
+5. npm install dotenv
+6. Connect do DB

@@ -1,6 +1,6 @@
 const express = require('express');
-
 const app = express();
+const moongose = require('mongoose');
 
 
 //ROUTES in Express
@@ -12,10 +12,15 @@ app.get('/post', (req, res) => {
     res.send('test!!!');
 });
 
-//Middlewares
-app.use('/post', () => {
-    console.log('test działa!!!');
+
+//Connect to DB
+moongose.connect(
+    'mongodb+srv://admin:Ba123456@restfulapi.crvaw.mongodb.net/<dbname>?retryWrites=true&w=majority',
+    { useNewUrlParser: true },
+    () => {
+    console.log('Connect to DB!!!');
 });
+
 
 //LISTEN SERVER
 const PORT = process.env.PORT || 3006;
