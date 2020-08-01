@@ -10,4 +10,5 @@ Steps:
 4. npm install mongoose
 5. npm install dotenv
 6. Connect do DB
-7.
+7. DB_CONNECTION dotenv/config
+8. Add Router and routes, import Routes to app.js

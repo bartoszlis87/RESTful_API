@@ -4,13 +4,14 @@ const moongose = require('mongoose');
 //dotenv
 require('dotenv/config');
 
-//ROUTES in Express
+//import Routes
+const postRoute = require('./routes/posts');
+
+app.use('/posts', postRoute);
+
+//Routes
 app.get('/', (req, res) => {
     res.send('Server started in PORT');
-});
-
-app.get('/post', (req, res) => {
-    res.send('test!!!');
 });
 
 
