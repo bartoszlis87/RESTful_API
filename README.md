@@ -2,6 +2,15 @@
 
 #Restful Api With Node.js Express & MongoDB 
 
+*clone repo 
+*install dependencies 
+npm install
+
+*GO
+
+
+
+
 Steps:
 1. npm init
 2. install dependencies
