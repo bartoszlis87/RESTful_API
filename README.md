@@ -10,3 +10,4 @@ Steps:
 4. npm install mongoose
 5. npm install dotenv
 6. Connect do DB
+7.

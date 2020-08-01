@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const moongose = require('mongoose');
-
+//dotenv
+require('dotenv/config');
 
 //ROUTES in Express
 app.get('/', (req, res) => {
@@ -15,7 +16,7 @@ app.get('/post', (req, res) => {
 
 //Connect to DB
 moongose.connect(
-    'mongodb+srv://admin:Ba123456@restfulapi.crvaw.mongodb.net/<dbname>?retryWrites=true&w=majority',
+    process.env.DB_CONNECTION,
     { useNewUrlParser: true },
     () => {
     console.log('Connect to DB!!!');
